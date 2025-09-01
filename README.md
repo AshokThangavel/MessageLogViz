@@ -1,32 +1,42 @@
+Sure — here's a **simpler, cleaner, and more efficient version** of your `README.md` written in concise, professional Markdown, while keeping all the essential content:
+
+---
+
+### ✅ Clean & Simple `README.md`
+
+````markdown
 # 📄 MessageLogViz
 
-**MessageLogViz** is a modular, web-based log viewer for visualizing and exploring the `messages.log` file from **InterSystems IRIS**.
+**MessageLogViz** is a web-based log viewer for visualizing `messages.log` from **InterSystems IRIS**.
 
-This tool transforms raw log data into a clear, interactive dashboard — allowing developers, administrators, and support teams to gain fast insights, track issues, and filter by date, severity, or keywords directly from their browser.
-
----
-
-## 🚀 Features
-
-- 📅 **Date-Based Navigation** — Quickly switch between logs grouped by date.
-- 🔍 **Searchable Logs** — Search within log entries by keyword.
-- 🟥 **Severity Highlighting** — Color-coded rows for Info, Warning, and Error logs.
-- 📊 **Daily Summary Dashboard** — View summaries per date (e.g., error count).
-- 🌐 **Modern Web UI** — Lightweight, responsive, and modular HTML/JS frontend.
-- 🔌 **Modular Design** — Easily extend or integrate with IRIS CSP/XData pages.
-
----
-
-## 🖼️ Screenshot
-
-
+It turns raw log data into an interactive dashboard so developers and admins can quickly filter, search, and analyze logs by date, severity, or keyword — right from the browser.
 
 ---
 
 ## 📦 Installation
 
-### 1. Clone the Repository
-
 ```bash
 git clone https://github.com/your-org/MessageLogViz.git
 cd MessageLogViz
+````
+
+---
+
+## ▶️ Run with Docker
+
+Make sure Docker & Docker Compose are installed, then run:
+
+```bash
+docker compose up --build -d
+```
+
+---
+
+## 🌐 Access the Viewer
+
+Open in your browser:
+
+* `http://localhost:52773/csp/user/Logs.MessageLogViz.cls`
+* Or: `http[s]://<your-ip>:<port>/csp/user/Logs.MessageLogViz.cls`
+
+---
